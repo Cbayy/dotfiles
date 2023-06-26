@@ -1,0 +1,9 @@
+*.swap
+nvim/session.vim
+*~
+nvim/undodir/
+nvim/pack/packer_compiled.lua
+nvim/plugin/packer_compiled.lua 
+nvim/pack/*/start/
+nvim/pack/packer/*_sync_state
+
