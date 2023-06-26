@@ -2,7 +2,15 @@ local telescope = require('telescope')
 
 telescope.setup {
 	defaults = {
-
+		prompt_prefix = '> ',
+		selection_caret = '> ',
+		entry_prefix = '  ',
+		sorting_strategy = 'ascending',
+		layout_strategy = 'horizontal',
+		layout_config = {
+			prompt_position = 'top',
+		},
+		file_ignore_patterns = { 'node_modules', '.git', '.svn', '.tmp' },
 	},
 }
 

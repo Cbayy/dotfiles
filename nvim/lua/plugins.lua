@@ -1,6 +1,11 @@
-require('packer').startup(function()
+require('packer').startup(function(use)
     use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
+	use {
+		'williamboman/mason.nvim',
+		'williamboman/mason-lspconfig.nvim',
+		'neovim/nvim-lspconfig',
+	}
 end)
 
 local plugin_configs_path = vim.fn.stdpath('config') .. '/lua/plugin-configs'
