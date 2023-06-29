@@ -10,7 +10,7 @@ telescope.setup {
 		layout_config = {
 			prompt_position = 'top',
 		},
-		file_ignore_patterns = { 'node_modules', '.git', '.svn', '.tmp' },
+		file_ignore_patterns = { 'node_modules', '.git', '.svn', '.tmp', '%/packer/*' },
 	},
 }
 
